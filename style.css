@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* :root{
+    --a_color: black;
+    --1st_font: "Lato", sans-serif;
+} */
+
+
+
+nav{
+    background: #fff;
+    /* padding: 15px 0px; */
+    box-shadow: 5px 10px 10px 2px #e0e2e5b2;
+
+}
+
+
+
+.container{
+    width: 1000px;
+    margin: auto;
+
+}
+
+ul,ol{
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* justify-content: space-evenly; */
+    /* commentry----(------ justify-content property work horizontally. ------) */
+    /* commentry----(------ align-items property work vertically. ------) */
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 25px 20px;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    color: black;
+    position: relative;
+
+
+    /* color: var(--a_color); */
+    /* font-family: var(--1st_font); */
+
+
+}
+
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #1AC1A2;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+}
+
+
+nav ul li a:hover::before{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+#nav .drp-dwn-parent{
+    position: relative;
+}
+
+#nav .drp-dwn-child{
+    display: block;
+    position: absolute;
+    width: 150px;
+    box-shadow: 0px 5px 6px 3px #e0e2e5b2;
+    margin-top: -50px;
+    z-index: -1;
+    visibility: hidden;
+}
+
+
+#nav .drp-dwn-parent:hover .drp-dwn-child{
+    margin-top: 0;
+    transition: 0.4s;
+    visibility: visible;
+
+}
+
+#nav .drp-dwn-child a {
+    display: block;
+}
+
+#nav .slide-prnt{
+    position: relative;
+    background: #1AC1A2;
+}
+
+
+
+#nav .slide-chld{
+    background: #000000b2;
+    display: block;
+    left: 100%;
+    top: 0;
+    position: absolute;
+    width: 130px;
+    margin-left: -50px;
+    transition: 0.3s;
+    z-index: -2;
+    /* visibility: hidden; */
+}
+#nav .slide-prnt:hover .slide-chld{
+    background: chocolate;
+    margin-left: 0px;
+    visibility: visible;
+
+}
