@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    height: 50vh;
+    width: 1252px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-- ============= Common CSS ==================== --*/
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Layout and Centering */
+#slickSlider .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slickSlider .wrapper {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Navigation Arrows */
+#slickSlider .wrapper .arrowLeft,
+#slickSlider .wrapper .arrowRight {
+    position: absolute;
+    background: #00000036;
+    color: #f0f0f0;
+    line-height: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+#slickSlider .wrapper .arrowLeft {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -80px;
+}
+
+#slickSlider .wrapper .arrowRight {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -80px;
+}
+
+/* Card Row (Slick container) */
+#slickSlider .cardRow .cardPrnt {
+    width: 600px;
+    height: 400px;
+    margin: 0 30px;
+    background-color: #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* DOTS AREA STYLING */
+#slickSlider .cardRow .slick-dots-wrapper {
+    position: relative;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#slickSlider .cardRow ul.slick-dots {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+#slickSlider .cardRow ul.slick-dots li {
+    position: relative;
+    padding: 0;
+    line-height: 0;
+}
+
+#slickSlider .cardRow ul.slick-dots li button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #0099ff38;
+    /* Inactive color */
+    color: transparent;
+    font-size: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------------------------------------------------- */
+/* KEY CHANGE: Override Slick's default active color.   */
+/* The button associated with 'slick-active' will now   */
+/* remain the inactive color until our JS class applies. */
+/* ---------------------------------------------------- */
+#slickSlider .cardRow ul.slick-dots li.slick-active button {
+    background: #0099ff4b;
+    /* Force inactive color */
+}
+
+/* The BRIGHT state is now ONLY controlled by this class applied by JS */
+#slickSlider .cardRow ul.slick-dots li.dot-bright button {
+    background: #0099ff !important;
+    /* Force brightness when JS applies this class */
+}
+
+/* THE STRETCHY INDICATOR */
+.stretchy-indicator {
+    position: absolute;
+    top: 0px;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #0099ff;
+    /* Active color */
+    /* KEY: CSS transition handles the smooth stretching */
+    transition: left 0.4s cubic-bezier(0.5, 0, 0.5, 1),
+        width 0.4s cubic-bezier(0.5, 0, 0.5, 1);
+    z-index: 0;
+    /* Must be behind the buttons */
+}
