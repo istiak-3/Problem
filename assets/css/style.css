@@ -437,9 +437,9 @@ ul.category_list li {
     border-radius: 0;
 }
 
-ul.category_list li:hover {
+ul.category_list li:hover,
+ul.category_list li:focus {
     color: var(--branding-success);
-    /* background: var(--branding-success); */
     border-left: 5px solid var(--branding-success-neutral);
 }
 
@@ -466,6 +466,7 @@ ul.category_list li a span.iconify {
 }
 
 /* -- ==== bottom header Part End ====== -- */
+
 
 
 /*-- ============= header SECTION END ==================== --*/
