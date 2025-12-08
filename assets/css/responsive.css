@@ -1,0 +1,137 @@
+@media (max-width: 991px) {
+
+    :root {
+        --gren-gray-scale-900: #002603;
+        --gren-gray-scale-800: #173b1a;
+        --gren-gray-scale-700: #2b572e;
+        --gren-gray-scale-600: #406b42;
+        --gren-gray-scale-500: #618062;
+        --gren-gray-scale-400: #7a997c;
+        --gren-gray-scale-300: #96b297;
+        --gren-gray-scale-200: #b4ccb4;
+        --gren-gray-scale-100: #dae5da;
+        --gren-gray-scale-50: #edf2ee;
+        --gray-scale-gray-–-900: #1a1a1a;
+        --gray-scale-gray-–-800: #333;
+        --gray-scale-gray-–-700: #4d4d4d;
+        --gray-scale-gray-–-600: #666;
+        --gray-scale-gray-–-500: #808080;
+        --gray-scale-gray-–-400: #999;
+        --gray-scale-gray-–-300: #b3b3b3;
+        --gray-scale-gray-–-200: #ccc;
+        --gray-scale-gray-–-100: #e6e6e6;
+        --gray-scale-gray-–-50: #f2f2f2;
+        --gray-scale-white: #fff;
+        --branding-success-bright: #84d187;
+        --branding-success: #00b207;
+        --branding-success-neutral: #00a706;
+        --branding-success-dark: #2c742f;
+        --branding-warning: #ff8a00;
+        --branding-error: #ea4b48;
+        --font-family: "Poppins", sans-serif;
+        --second-family: "Segoe Script", sans-serif;
+        --third-family: "Dancing Script", sans-serif;
+    }
+
+    /*-- ============= header SECTION START ==================== --*/
+
+    /* -- ==== mobile header Part Start ====== -- */
+    #mobile-header {
+        padding: 12px 0;
+        box-shadow: 0 0 12px 0 rgba(73, 73, 73, 0.322);
+    }
+
+    #mobile-header .mobile_menu .menu_icon {
+        font-size: 28px;
+        border-radius: 5px;
+        border: 1px solid #eeeded;
+    }
+
+    #mobile-header .mobile_menu .menu_icon:hover {
+        color: var(--gray-scale-gray-–-700);
+    }
+
+    #mobile-header .offcanvas-header .btn-close:focus {
+        box-shadow: 0 0 0 3px #ff44416e;
+    }
+
+    #mobile-header .offcanvas-body ul.nav-tabs {
+        border-bottom: 1px solid var(--gray-scale-gray-–-100);
+        margin-bottom: 8px;
+        box-shadow: 0 0 12px 0 rgba(32, 181, 37, 0.322);
+    }
+    #mobile-header .offcanvas-body ul.nav-tabs li.nav-item {
+        width: 50%;
+    }
+
+    #mobile-header .offcanvas-body ul.nav-tabs li.nav-item:hover {
+        background: var(--branding-success);
+    }
+    
+    #mobile-header ul.nav-tabs,
+    #mobile-header ul.nav-tabs li.nav-item button.nav-link {
+        border: none;
+        width: 100%;
+        border-radius: 0;
+        color: var(--gray-scale-gray-–-900);
+        margin: 0;
+        transition: color 0s;
+    }
+    #mobile-header ul.nav-tabs li.nav-item button.nav-link:hover {
+        color: var(--gray-scale-white);
+    }
+    #mobile-header ul.nav-tabs li.nav-item button.nav-link:focus-visible {
+        box-shadow: none;
+    }
+
+    #mobile-header ul.nav-tabs li.nav-item button.nav-link.active {
+        background: var(--branding-success-dark);
+        color: var(--gray-scale-white);
+        border: none;
+    }
+
+
+    .brand_logo {
+        font-size: 26px;
+    }
+
+    .brand_logo>img {
+        height: 26px;
+        width: 26px;
+    }
+
+    ul.icon_group li {
+        font-size: 28px;
+    }
+
+    ul.icon_group>li:last-child {
+        padding-left: 8px;
+    }
+
+    ul.icon_group li:not(:last-child) {
+        margin-right: 12px;
+    }
+
+
+    ul.icon_group li:last-child::before {
+        height: calc(100% - 10px);
+    }
+
+
+
+    ul.icon_group li.shopping_cart .cart_wrapper .item_count {
+        font-size: 8px;
+        line-height: 16px;
+        width: 16px;
+        height: 16px;
+    }
+
+    ul.icon_group li.shopping_cart .cart_icon {
+        font-size: 28px;
+    }
+
+
+    /* -- ==== mobile header Part End ====== -- */
+
+    /*-- ============= header SECTION END ==================== --*/
+}

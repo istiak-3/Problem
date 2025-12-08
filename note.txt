@@ -1,0 +1,29 @@
+Eco bazar project ---------
+
+4 no. Home Page (11)
+10 no. Single Page (4)
+15 no. Cart Page (1)
+16 no. Checkout Page (2)
+17 no. Blog Page (2)
+                 20 parts total
+
+Time schedule plan:
+
+27 Nov. - 31 Dec. (Total 35 days)
+
+35 days / 20 parts = 1.75 parts per day....
+
+Everyday - 3 part (if common)
+Everyday - 1 part min. (if new)
+
+reminder: always learn first not copy paste ...
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+project planning------------
+
+desktop--
+scroll :- shrink height (done)
+
+responsive---
+bottom header :-   (left side)menu>1.all-categories,2.pages                   (center)brand_logo                   (right side)1.search,2.cart,3.account

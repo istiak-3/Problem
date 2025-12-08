@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar</title>
+
+
+    <!-- others -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ========= header section SECTION START =============== -->
+    <header>
+        <!-- ==== top header Part Start ====== -->
+        <section id="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="location col-lg-6">
+                        <p class="flex-align-center">
+                            <span class="iconify"><iconify-icon icon="ep:location"></iconify-icon></span>
+                            Store Location: Lincoln- 344, Illinois, Chicago, USA
+                        </p>
+                    </div>
+
+                    <div class="utilities col-lg-6 d-flex justify-content-end">
+
+                        <select name="translator" class="translator d-none d-lg-block">
+                            <option value="">Eng</option>
+                            <option value="">Ban</option>
+                        </select>
+
+                        <select name="currency_convert" class="currency_convert d-none d-lg-block">
+                            <option value="">USD</option>
+                            <option value="">BDT</option>
+                        </select>
+
+                        <span class="sign_opt d-none d-lg-block">
+                            <a href="">Sign In</a> / <a href="">Sign Up</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==== top header Part End ====== -->
+
+        <!-- ==== middle header Part Start ====== -->
+        <section id="middle-header" class="d-none d-lg-block">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="branding col-lg-3">
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+                    <div class="search_bar col-lg-6">
+                        <form class="search_form" role="search">
+                            <input class="search_input" type="text" placeholder="Search" />
+                            <span class="search_icon iconify"><iconify-icon
+                                    icon="iconamoon:search"></iconify-icon></span>
+                            <button class="search_btn" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="cart col-lg-3 d-flex justify-content-end">
+                        <ul class="icon_group d-flex">
+
+                            <li class="wishlist">
+                                <a class="wishlist_icon iconify" aria-current="page" href="#">
+                                    <iconify-icon icon="si:heart-line"></iconify-icon>
+                                </a>
+                            </li>
+
+                            <li class="shopping_cart">
+                                <div class="cart_wrapper">
+                                    <a class="cart_icon iconify" aria-current="page" href="#">
+                                        <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                    </a>
+                                    <p class="item_count">2</p>
+                                </div>
+
+                                <div class="cart_contents">
+                                    <p>Shopping cart:</p>
+                                    <h4>$57.00</h4>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+        <!-- ==== middle header Part End ====== -->
+
+        <!-- ==== bottom header Part Start ====== -->
+        <section id="bottom-header" class="d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 pages">
+                        <ul class="page_list">
+                            <li class="categories">
+                                <button class="flex-align-center">
+                                    <span class="iconify"><iconify-icon icon="iconoir:menu"></iconify-icon></span>
+                                    All Categories
+                                    <span class="iconify"><iconify-icon
+                                            icon="iconamoon:arrow-down-2-light"></iconify-icon></span>
+                                </button>
+                                <ul class="category_list">
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify"><iconify-icon
+                                                    icon="fluent:food-apple-20-regular"></iconify-icon></span>
+                                            Fresh Fruit
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify"><iconify-icon
+                                                    icon="carbon:fruit-bowl"></iconify-icon></span>
+                                            Vegetables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify"><iconify-icon
+                                                    icon="fluent-emoji-high-contrast:cut-of-meat"></iconify-icon></span>
+                                            Fish & Meat
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify"><iconify-icon icon="cbi:eggs" width="32"
+                                                    height="32"></iconify-icon></span>
+                                            Eggs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="flex-align-center">
+                                            <span class="iconify"><iconify-icon
+                                                    icon="streamline-ultimate:seasoning-food"></iconify-icon></span>
+                                            Spice
+                                        </a>
+                                    </li>
+
+                                    <li> <a href="#" class="flex-align-center">
+                                            <span class="iconify"><iconify-icon
+                                                    icon="tdesign:add"></iconify-icon></span>
+                                            View All Category
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="active-page"><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 contact d-flex justify-content-end">
+                        <p class="flex-align-center contact_num"><span class="iconify"><iconify-icon
+                                    icon="ph:phone-call"></iconify-icon></span>(219) 555-0114</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==== bottom header Part End ====== -->
+
+        <!-- ==== mobile header Part Start ====== -->
+        <section id="mobile-header" class="d-block d-lg-none">
+            <div class="container px-2">
+                <div class="row align-items-center g-0">
+
+
+                    <div class="col-1 mobile_menu">
+                        <!-- mobile-menu offcanvas left start-->
+                        <button class="flex-align-center menu_icon" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions">
+                            <span class="iconify"><iconify-icon icon="gg:menu-left-alt"></iconify-icon></span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+                            <div class="offcanvas-header pe-4">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body p-0">
+                                <!-- nav & tabs start -->
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane">All Categories</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane">Pages</button>
+                                    </li>
+
+                                </ul>
+
+                                <div class="tab-content" id="myTabContent">
+
+                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+                                        <ul class="category_list">
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify"><iconify-icon
+                                                            icon="fluent:food-apple-20-regular"></iconify-icon></span>
+                                                    Fresh Fruit
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify"><iconify-icon
+                                                            icon="carbon:fruit-bowl"></iconify-icon></span>
+                                                    Vegetables
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify"><iconify-icon
+                                                            icon="fluent-emoji-high-contrast:cut-of-meat"></iconify-icon></span>
+                                                    Fish & Meat
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify"><iconify-icon icon="cbi:eggs" width="32"
+                                                            height="32"></iconify-icon></span>
+                                                    Eggs
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="flex-align-center">
+                                                    <span class="iconify"><iconify-icon
+                                                            icon="streamline-ultimate:seasoning-food"></iconify-icon></span>
+                                                    Spice
+                                                </a>
+                                            </li>
+
+                                            <li> <a href="#" class="flex-align-center">
+                                                    <span class="iconify"><iconify-icon
+                                                            icon="tdesign:add"></iconify-icon></span>
+                                                    View All Category
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+
+
+
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                        aria-labelledby="profile-tab" tabindex="0">.profile..</div>
+
+                                </div>
+                                <!-- nav & tabs end -->
+                            </div>
+
+
+                        </div>
+                        <!-- mobile-menu offcanvas left start-->
+                    </div>
+
+
+                    <div class="col-7 flex-align-center justify-content-center">
+                        <a class="brand_logo navbar-brand" href="#">
+                            <img src="./assets/images/brand_logo.png" alt="">
+                            Ecobazar
+                        </a>
+                    </div>
+
+
+                    <div class="col-4">
+
+                        <ul class="icon_group d-flex justify-content-end">
+
+                            <li>
+                                <a class="search_icon iconify" aria-current="page" href="#">
+                                    <iconify-icon icon="si:search-line"></iconify-icon>
+                                </a>
+                            </li>
+
+                            <li class="shopping_cart">
+                                <div class="cart_wrapper">
+                                    <a class="cart_icon iconify" aria-current="page" href="#">
+                                        <iconify-icon icon="ph:handbag-light"></iconify-icon>
+                                    </a>
+                                    <p class="item_count">2</p>
+                                </div>
+                            </li>
+
+
+                            <li class="flex-align-center">
+                                <a class="iconify" aria-current="page" href="#">
+                                    <iconify-icon icon="fluent:phone-key-20-regular"></iconify-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <!-- ==== mobile header Part End ====== -->
+    </header>
+    <!-- ========= header section SECTION END =============== -->
+
+    <!-- other -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/iconify-icon.min.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
